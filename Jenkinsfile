@@ -16,25 +16,12 @@ pipeline{
                 echo "Test"
             }
         }
-        stage("Deploy-Int"){
-            steps{
-                echo "Deploy Int Environment"
-            }
-        }
-        stage("Deploy-QA"){
-            steps{
-                echo "Deploy QA Environment"
-            }
-        }
+
          stage("Deploy-UAT"){
             steps{
                 echo "Deploy UAT Environment"
             }
         }
-        stage("Deploy-Prod"){
-            steps{
-                echo "Deploy Prod Environment"
-            }
-        }
+  
     }
 }
